@@ -1,9 +1,19 @@
 # laravel-docker-file
 Host your laravel app using this dockerfile
 
-## Overview
-**Dockerfile** - builds PHP environment with necessary dependencies for the application. 
-**docker-compose.yaml** - defines the services for the app tier and db tier
+# Overview
+
+This setup includes two key configuration files:
+
+1. **Dockerfile**  
+   - Builds a custom PHP environment with all necessary dependencies required for the application.  
+   - Includes tools, libraries, and extensions like `pdo`, `pdo_pgsql`, and Composer.
+
+2. **docker-compose.yaml**  
+   - Defines the services for the application:
+     - **App Tier**: Runs the PHP-based application.
+     - **DB Tier**: Configures a PostgreSQL database.
+   - Specifies networking, ports, volumes, and environment variables for seamless communication between containers.
 
 # Running the Setup
 
